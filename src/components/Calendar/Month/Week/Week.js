@@ -10,14 +10,14 @@ const Week = props => {
 
     for(let i = 0; i <= 6; i++) {
         if(i < props.startWeekDay) {
-            week.push(<Day key={i} empty></Day>);
+            week.push(<Day daysMoods={props.daysMoods} month={props.month} key={i} empty></Day>);
             continue;
         }
             
         if(day <= props.end)
-            week.push(<Day key={i} clicked={props.dayClicked} mood={null}>{day}</Day>);
+            week.push(<Day daysMoods={props.daysMoods} month={props.month} key={i} clicked={props.dayClicked}>{day}</Day>);
         else
-            week.push(<Day key={i} empty></Day>);
+            week.push(<Day daysMoods={props.daysMoods} month={props.month} key={i} empty></Day>);
         
         day++;
     }

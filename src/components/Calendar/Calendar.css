@@ -1,7 +1,8 @@
 .Calendar {
-    max-width: --calendar-width;
+    max-width: var(--calendar-width);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    margin: 0 auto;
 }

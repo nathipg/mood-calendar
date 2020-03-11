@@ -11,12 +11,12 @@ const Month = props => {
     let weekEnd = 7 - monthStart.getDay();
 
     const weeks = [
-        <Week key={1} startWeekDay={monthStart.getDay()} start={1} end={weekEnd} />
+        <Week daysMoods={props.daysMoods} month={props.month} key={1} startWeekDay={monthStart.getDay()} start={1} end={weekEnd} dayClicked={props.dayClicked} />
     ];
 
     do {
         weekEnd = weekEnd + 7;
-        weeks.push(<Week key={weekEnd - 6} startWeekDay={0} start={weekEnd - 6} end={weekEnd > monthEnd ? monthEnd : weekEnd} />);
+        weeks.push(<Week daysMoods={props.daysMoods} month={props.month} key={weekEnd - 6} startWeekDay={0} start={weekEnd - 6} end={weekEnd > monthEnd ? monthEnd : weekEnd} dayClicked={props.dayClicked} />);
     } while(weekEnd < monthEnd);
 
     return <div className="Month">
