@@ -1,5 +1,26 @@
+:root{
+    --mood-1: rgb(45, 107, 95);
+    --mood-2: rgb(114, 227, 166);
+    --mood-3: rgb(223, 244, 199);
+    --mood-4: rgb(237, 191, 152);
+    --mood-5: rgb(234, 61, 54);
+    --day-width: 1.2rem;
+    --day-margin: 0.7rem;
+    --month-width: calc((var(--day-width) +  var(--day-margin) * 2) * 7);
+    --month-padding: 1rem;
+    --calendar-width: calc((var(--month-width) +  var(--month-padding) * 2) * 3);
+}
+
 .App {
   text-align: center;
   font-family: 'Muli', sans-serif;
   margin: 3rem;
+}
+
+.App h1 {
+    font-size: 1.5rem;
+}
+
+.App h2 {
+    font-size: 1.17rem;
 }

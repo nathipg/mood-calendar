@@ -1,0 +1,16 @@
+.Month {
+    width: var(--month-width);
+    padding: var(--month-padding);
+    display: inline-block;
+}
+
+.week-days-labels {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.week-days-labels span {
+    width: calc(100% / 7);
+}

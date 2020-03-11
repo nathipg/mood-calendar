@@ -1,11 +1,3 @@
-:root{
-    --mood-1: rgb(45, 107, 95);
-    --mood-2: rgb(114, 227, 166);
-    --mood-3: rgb(223, 244, 199);
-    --mood-4: rgb(237, 191, 152);
-    --mood-5: rgb(234, 61, 54);
-}
-
 .Mood {
     border: 0;
     background: inherit;

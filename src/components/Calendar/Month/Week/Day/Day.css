@@ -1,0 +1,36 @@
+.Day {
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    font-size: 0.6rem;
+    width: var(--day-width);
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem var(--day-margin);
+}
+
+.Day.empty {
+    background-color: white;
+}
+
+.Day.mood-1 {
+    background-color: var(--mood-1);
+}
+
+.Day.mood-2 {
+    background-color: var(--mood-2);
+}
+
+.Day.mood-3 {
+    background-color: var(--mood-3);
+}
+
+.Day.mood-4 {
+    background-color: var(--mood-4);
+}
+
+.Day.mood-5 {
+    background-color: var(--mood-5);
+}
