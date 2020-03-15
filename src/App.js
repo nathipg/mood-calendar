@@ -3,18 +3,13 @@ import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Calendar from './components/Calendar/Calendar';
 
+import { updateObject } from './util/object';
+
 import './App.css';
 
 function App() {
     const [mood, setMood] = useState(null);
     const [daysMoods, setDaysMoods] = useState({});
-
-    const updateObject = (oldObject, updatedProperties) => {
-        return {
-            ...oldObject,
-            ...updatedProperties
-        };
-    };
     
     const moodClick = moodClicked => {
         if(moodClicked === mood)
