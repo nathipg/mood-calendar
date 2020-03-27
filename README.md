@@ -1,8 +1,3 @@
-# 100Days100Projects
-
-Idea: https://www.florin-pop.com/blog/2019/09/100-days-100-projects/
-
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
